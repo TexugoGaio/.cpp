@@ -1,0 +1,10 @@
+0	Eric	eric@email.com	25	1
+1	Sam	sam@email.com	30	1
+13	Juju	jujuba@email.com	18	1
+19	Tia	tia@email.com	25	1
+22	Dipper	dipp@email.com	15	1
+26	June	jun@email.com	6	1
+35	Mabel	mab@email.com	14	1
+49	Jane	jane@email.com	23	1
+51	Lain	lain@email.com	16	1
+98	Ruppert	ruppy@email.com	50	1
