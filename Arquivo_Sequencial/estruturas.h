@@ -44,7 +44,7 @@ void Remover(Usuario* list,int* lote, Usuario* newList, int fimList, int fimLote
 			cout << "Lista[" << k << "] recebe " << list[i].id << endl;
 			k++;
 		}else{
-			cout << lote[i] << " removido!" << endl;
+			cout << lote[j] << " removido!" << endl;
 			j++;
 		}
 		i++;

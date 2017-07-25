@@ -20,7 +20,7 @@ int main(){
 	
 	// gravando conteudo do lote
 	ofstream file;
-	file.open("lote.txt");
+	file.open("files/lote.txt");
 	for(int i = 0; i < 4; i++){
 		file << lote[i].id << "\t" << lote[i].nome << "\t" << lote[i].email;
 		file << "\t" << lote[i].idade << "\t" << lote[i].status <<"\n";
@@ -33,7 +33,7 @@ int main(){
 	showList(novaLista, 9, "\nNova Lista");
 	
 	//gravando conteudo da nova lista
-	file.open("newList.txt");
+	file.open("files/newList.txt");
 	for(int i = 0; i < 10; i++){
 		file << novaLista[i].id << "\t" << novaLista[i].nome << "\t" << novaLista[i].email;
 		file << "\t" << novaLista[i].idade << "\t" << novaLista[i].status <<"\n";
@@ -49,7 +49,7 @@ int main(){
 	Remover(novaLista, novoLote, listaAtualizada, 9, 3);
 	showList(listaAtualizada, 5, "\nLista Atualizada");
 	// gravando a lista atualizado num arquivo.txt
-	file.open("attList.txt");
+	file.open("files/attList.txt");
 	for(int i = 0; i < 6; i++){
 	  	file << listaAtualizada[i].id << "\t" << listaAtualizada[i].nome << "\t" << listaAtualizada[i].email;
 		file << "\t" << listaAtualizada[i].idade << "\t" << listaAtualizada[i].status <<"\n";
@@ -62,7 +62,7 @@ int main(){
 
 void gravar(Usuario* u, int final){
 	ofstream arquivo;
-	arquivo.open("userlist.txt", std::ios_base::app); // escreve sem apagar o conteudo ja existente
+	arquivo.open("files/userlist.txt", std::ios_base::app); // escreve sem apagar o conteudo ja existente
 	for(int i = 0; i <= final; i++){
 		arquivo << u[i].id << "\t" << u[i].nome << "\t" << u[i].email << "\t" << u[i].idade << "\t" << u[i].status <<"\n";
 	}
@@ -71,7 +71,7 @@ void gravar(Usuario* u, int final){
 
 void lerArquivo(Usuario* u, int final){
 	ifstream arquivo;
-	arquivo.open("userlist.txt");
+	arquivo.open("files/userlist.txt");
 	for(int i = 0;  i <= final; i++){
 		// passando o conteudo do arquivo.txt para a struct
 		arquivo >> u[i].id >> u[i].nome >> u[i].email >> u[i].idade >> u[i].status;
