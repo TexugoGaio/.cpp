@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//TA BEM LEGAL
+
 int main(){
   int vet1[5] = {2, 4, 6, 8, 10};
   int vet2[5] = {1, 3, 5, 7, 9};
